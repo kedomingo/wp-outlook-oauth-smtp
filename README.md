@@ -82,10 +82,14 @@ Confirm.
 
 Once you have the credentials required, go to the admin panel and fill out the form and click `Save Credentials`.
 
+<img src="https://raw.githubusercontent.com/kedomingo/wp-outlook-oauth-smtp/refs/heads/main/asset/img1.png" />
+
 After saving the credentials, click on `Begin Auth Flow` and log in to Microsoft using the email address you will use to send. This part is
 important because the token you will use for sending emails MUST match the `from` email address - the `username` you put in the credentials form.
 
 If the auth flow was successful, you should see the message `Token exists. You're authorized` instead of the `Begin Auth Flow` button.
+
+<img src="https://raw.githubusercontent.com/kedomingo/wp-outlook-oauth-smtp/refs/heads/main/asset/img2.png" />
 
 You may test sending an email using the form for testing.
 
