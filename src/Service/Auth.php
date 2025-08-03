@@ -35,7 +35,6 @@ class Auth {
 
         // Still usable
         if ($oldTokenData['expires'] < time()) {
-            error_log("Reusing valid auth token...");
             return $oldTokenData;
         }
 

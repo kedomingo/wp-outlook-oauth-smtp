@@ -8,16 +8,17 @@
  * License:     GPL-2.0+
  * Copyright:   2025 Kyle Domingo
  *
- * WP Outlook OAuth2 SMTP Connector is free software: you can redistribute it and/or modify
+ * Outlook OAuth2 SMTP Connector is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
  * any later version.
  *
- * WP Outlook OAuth2 SMTP Connector is distributed in the hope that it will be useful,
+ * Outlook OAuth2 SMTP Connector is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  */
+
 
 
 use Kedomingo\OutlookOauth\Admin\Admin;
@@ -63,7 +64,7 @@ add_action('admin_menu', function () use ($container) {
 // Handle callback
 add_action($container->get('plugin.save_action_handler'), function () use ($container) {
     $handler = $container->get(Callback::class);
-    $handler->saveToken($_GET['code'] ?? '');
+    $handler->saveToken(sanitize_text_field($_GET['code'] ?? ''));
 
     $pluginUrl = $container->get('plugin.url');
     wp_safe_redirect($pluginUrl);
