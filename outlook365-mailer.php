@@ -1,8 +1,9 @@
 <?php
 /**
- * Plugin Name: Outlook SMTP OAuth2
+ * Plugin Name: WP Outlook SMTP OAuth2
  * Description: Authenticate with Outlook 365 and send SMTP emails via OAuth2.
- * Version: 1.0.0
+ * Version: 0.1
+ * Author: Kyle Domingo
  */
 
 
