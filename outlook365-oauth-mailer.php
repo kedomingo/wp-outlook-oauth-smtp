@@ -4,6 +4,7 @@
  * Description: Authenticate with Outlook 365 and send SMTP emails via OAuth2.
  * Version:     0.1
  * Author:      Kyle Domingo
+ * Author URI:  https://github.com/kedomingo/wp-outlook-oauth-smtp
  * License:     GPL-2.0+
  * Copyright:   2025 Kyle Domingo
  *
