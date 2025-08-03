@@ -1,0 +1,16 @@
+{
+  "name": "kedomingo/outlook_oauth",
+  "description": "outlook oauth flow",
+  "require": {
+    "league/oauth2-client": "^2.8",
+    "phpmailer/phpmailer": "^6.5",
+    "php-di/php-di": "^6.3",
+    "ext-json": "*",
+    "php": "^8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kedomingo\\OutlookOauth\\": "src/"
+    }
+  }
+}

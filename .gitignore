@@ -1,0 +1,4 @@
+.idea
+vendor
+credentials.json.enc.php
+token.json.enc.php
